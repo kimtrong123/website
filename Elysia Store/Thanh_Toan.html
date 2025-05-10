@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Scripts/ThanhToan.css">
+    <link rel="stylesheet" href="Scripts/style.css">
+    <title>Thanh Toán</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="container">
+                <ul class="main-menu">
+                    <li><a href="mainweb.html">Trang Chủ</a></li>
+                    <li><a href="Product.html">Sản Phẩm</a></li>
+                    <li><a href="ChinhSach.html">Chính Sách</a></li>
+                    <li class="has-submenu">
+                        <a href="">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="About _us.html">Về Chúng Tôi</a></li>
+                            <li><a href="About_Brand.html">Về Thương Hiệu</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-icons">
+                        <li><a href="Search.html" aria-label="Tìm kiếm"><i class="fas fa-search"></i></a></li>
+                        <li><a href="DangNhap.html" aria-label="Tài khoản"><i class="fas fa-user"></i></a></li>
+                        <li><a href="GioHang.html" aria-label="Giỏ hàng"><i class="fas fa-shopping-cart"></i></a></li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container-shop">
+        <!-- Ô Bên Trái -->
+        <div class="form-column">
+            <h1>Elysia Store</h1>
+            
+            <h2>Phương Thức Thanh Toán</h2>
+            <div class="payment-options">
+                <button class="payment-btn">ZaloPay</button>
+                <button class="payment-btn">Momo</button>
+                <button class="payment-btn">Ngân Hàng</button>
+            </div>
+            
+            <div class="divider">
+                <span>HOẶC</span>
+            </div>
+            
+            <div class="form-group">
+                <label>Liên hệ (Contact) </label>
+                <input type="text" placeholder="Email Hoặc Số Điện Thoại">
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsletter">
+                <label for="newsletter">Gửi email cho tôi với tin tức và ưu đãi</label>
+            </div>
+            
+            <h2>Vận Chuyển (Delivery)</h2>
+
+            <div style="display: flex; gap: 15px;">
+                <div class="form-group" style="flex: 1;">
+                    <label>Tên (First name)</label>
+                    <input type="text">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Họ (Last name)</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Địa Chỉ Chi Tiết (optional)</label>
+                <input type="text">
+            </div>
+            
+            <div style="display: flex; gap: 15px;">
+                <div class="form-group" style="flex: 1;">
+                    <label>Tỉnh/Thành</label>
+                    <input type="text">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Quận/Huyện</label>
+                    <input type="text">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Phường/Xã</label>
+                    <input type="text">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <label>Đường/Thôn</label>
+                    <input type="text">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Số Điện Thoại</label>
+                <input type="tel">
+            </div>
+        </div>
+        
+        <!-- Ô Bên Phải -->
+        <div class="cart-column">
+            <div class="cart-item">
+                <img src="images/product/Arzopa Z1FC 144Hz.webp" alt="Arzopa Z1FC">
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Arzopa Z1FC 144Hz Portable Gaming Monitor | 16.1" Screen</div>
+                    <div class="cart-item-price">3.527.930 VND</div>
+                </div>
+            </div>
+            
+            <div class="discount-code">
+                <input type="text" placeholder="Mã Giảm Giá">
+                <button>Nhập</button>
+            </div>
+            
+            <div class="price-summary">
+                <div class="price-row">
+                    <span>Đơn Giá:</span>
+                    <span>3.527.930 VND</span>
+                </div>
+                <div class="price-row">
+                    <span>Số Lượng:</span>
+                    <span>1</span>
+                </div>
+                <div class="price-row">
+                    <span>Tổng tiền phí vận chuyển:</span>
+                    <span>124.500 VND</span>
+                </div>              
+                <div class="price-row total">
+                    <span>Tổng thanh toán:</span>
+                    <span>3.527.930 VND</span>
+                </div>
+                <div class="price-row-confrim">
+                    <a href="" onclick="event.preventDefault()" class="cta-button">Mua Hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+           <!-- Footer -->
+        <footer id="wrapper-footer">
+            <div class="footer-top">
+                <ul class="Main-inf">
+                    <h4>ABOUT ELYSIA STORE</h4>
+                    <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+                <ul class="Main-inf">
+                    <h4 id="policy">CHÍNH SÁCH</h4>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                </ul>
+                <ul class="Main-inf">
+                    <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                    <li><a href="#">cskh@elysiastore.com</a></li>
+                    <li><a href="#">0947273489</a></li>
+                </ul>
+                <ul class="Main-inf">
+                    <h4>Theo chúng tôi</h4>
+                    <div class="linked-icon">
+                        <li><a class="fb" href="https://www.facebook.com/thanhson.v4"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="pin" href="https://www.pinterest.com/arzopa/?ref=woqlhbpl&sub_id="><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a class="yt" href="https://www.youtube.com/channel/UCxZpiAUuVlcNEEFEFAvNvFw/featured?ybp=ggIId29xbGhicGw%253D"><i class="fab fa-youtube-square"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="copy">
+                <a href="#">Copyright © 2025 ELYSIA STORE all rights reserved.</a>
+            </div>
+        </footer>
+    <script src="Javascripts/ThanhToan.js"></script>
+</body>
+</html>

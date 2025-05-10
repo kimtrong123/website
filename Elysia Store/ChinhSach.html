@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Scripts/ChinhSach.css">
+    <title>Về Chúng Tôi</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="container">
+                <ul class="main-menu">
+                    <li><a href="mainweb.html">Trang Chủ</a></li>
+                    <li><a href="Product.html">Sản Phẩm</a></li>
+                    <li><a href="ChinhSach.html">Chính Sách</a></li>
+                    <li class="has-submenu">
+                        <a href="">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="About _us.html">Về Chúng Tôi</a></li>
+                            <li><a href="About_Brand.html">Về Thương Hiệu</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-icons">
+                        <li><a href="Search.html" aria-label="Tìm kiếm"><i class="fas fa-search"></i></a></li>
+                        <li><a href="DangNhap.html" aria-label="Tài khoản"><i class="fas fa-user"></i></a></li>
+                        <li><a href="GioHang.html" aria-label="Giỏ hàng"><i class="fas fa-shopping-cart"></i></a></li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- Chính sách bán hàng -->
+    <div class="policy-section">
+        <div class="heading">
+            <h2><b>CHÍNH SÁCH BÁN HÀNG</b></h2>
+        </div>
+    
+        <div class="policy-item">
+            <h3><i class="fas fa-truck"></i> CHÍNH SÁCH GIAO HÀNG</h3>
+            <ul>
+                <li><strong>Phạm vi giao hàng:</strong> Toàn quốc (miễn phí vận chuyển cho đơn từ 1.000.000đ).</li>
+                <li><strong>Thời gian giao:</strong> 1-3 ngày làm việc tại thành phố, 3-7 ngày với khu vực ngoại tỉnh.</li>
+                <li><strong>Đối tác vận chuyển:</strong> Giao hàng tiết kiệm, Viettel Post, Grab Express.</li>
+                <li><strong>Kiểm tra hàng:</strong> Khách hàng vui lòng kiểm tra sản phẩm trước khi nhận.</li>
+            </ul>
+        </div>
+
+        <div class="policy-item">
+            <h3><i class="fas fa-exchange-alt"></i> CHÍNH SÁCH ĐỔI TRẢ</h3>
+            <ul>
+                <li><strong>Điều kiện đổi trả:</strong> Sản phẩm còn nguyên seal, hộp, không trầy xước, lỗi do nhà sản xuất.</li>
+                <li><strong>Thời hạn:</strong> 7 ngày kể từ ngày nhận hàng.</li>
+                <li><strong>Phí đổi trả:</strong> Miễn phí nếu sản phẩm lỗi, khách chịu phí nếu đổi do không phù hợp nhu cầu.</li>
+                <li><strong>Quy trình:</strong> Liên hệ CSKH qua email <a href="mailto:cskh@elysiastore.com">cskh@elysiastore.com</a> để được hướng dẫn.</li>
+            </ul>
+        </div>
+
+        <div class="policy-item">
+            <h3><i class="fas fa-shield-alt"></i> CHÍNH SÁCH BẢO HÀNH</h3>
+            <ul>
+                <li><strong>Thời gian:</strong> 12-24 tháng tùy sản phẩm (theo chính sách hãng).</li>
+                <li><strong>Điều kiện:</strong> Áp dụng cho lỗi kỹ thuật, không bao gồm hư hỏng do người dùng.</li>
+                <li><strong>Hỗ trợ:</strong> Mang sản phẩm đến trung tâm bảo hành hoặc gửi qua bưu điện kèm hóa đơn.</li>
+            </ul>
+        </div>
+
+        <div class="policy-item">
+            <h3><i class="fas fa-credit-card"></i> PHƯƠNG THỨC THANH TOÁN</h3>
+            <ul>
+                <li><strong>Chuyển khoản:</strong> ZaloPay, Momo, Ngân Hàng (ưu đãi 2% khi chọn phương thức này).</li>
+                <li><strong>COD:</strong> Thanh toán khi nhận hàng (áp dụng toàn quốc).</li>
+                <li><strong>Thẻ tín dụng:</strong> Ngân Hàng Nội Địa, Visa, Mastercard (trả góp 0% qua ngân hàng liên kết).</li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="circle-button to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      
+      <!-- Nút Chat -->
+      <button class="circle-button chat-box" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+      </button>
+      
+      <!-- Khung Chat -->
+      <div class="chat-window" id="chatWindow">
+          <div class="chat-header">
+              <i class="fas fa-comments mr-2"></i> Chat Box
+              <button class="close-chat" onclick="toggleChat()">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <div class="chat-body" id="chatBody">
+              <div class="message received">
+                  <p>Chào bạn! Có gì cần hỗ trợ không?</p>
+              </div>
+          </div>
+          <div class="chat-input">
+              <input type="text" id="chatMessage" placeholder="Nhập tin nhắn...">
+              <button onclick="sendMessage()">
+                  <i class="fas fa-paper-plane"></i>
+              </button>
+          </div>
+      </div>
+    <hr>
+
+    <footer id="wrapper-footer">
+        <div class="footer-top">
+            <ul class="Main-inf">
+                <h4>ABOUT ELYSIA STORE</h4>
+                <li><a href="#">Giới Thiệu</a></li>
+            </ul>
+            <ul class="Main-inf">
+                <h4 id="policy">CHÍNH SÁCH</h4>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
+            <ul class="Main-inf">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <li><a href="#">cskh@elysiastore.com</a></li>
+                <li><a href="#">0947273489</a></li>
+            </ul>
+            <ul class="Main-inf">
+                <h4>Theo chúng tôi</h4>
+                <div class="linked-icon">
+                    <li><a class="fb" href="https://www.facebook.com/thanhson.v4"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="pin" href="https://www.pinterest.com/arzopa/?ref=woqlhbpl&sub_id="><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a class="yt" href="https://www.youtube.com/channel/UCxZpiAUuVlcNEEFEFAvNvFw/featured?ybp=ggIId29xbGhicGw%253D"><i class="fab fa-youtube-square"></i></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="copy">
+            <a href="#">Copyright © 2025 ELYSIA STORE all rights reserved.</a>
+        </div>
+    </footer>
+    <script src="Javascripts/main.js"></script>
+</body>
+</html>

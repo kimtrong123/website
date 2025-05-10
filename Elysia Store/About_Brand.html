@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Scripts/Brand.css">
+    <title>Về Thương Thiệu - Elysia Store</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="container">
+                <ul class="main-menu">
+                    <li><a href="mainweb.html">Trang Chủ</a></li>
+                    <li><a href="Product.html">Sản Phẩm</a></li>
+                    <li><a href="ChinhSach.html">Chính Sách</a></li>
+                    <li class="has-submenu">
+                        <a href="">About <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="About _us.html">Về Chúng Tôi</a></li>
+                            <li><a href="About_Brand.html">Về Thương Hiệu</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-icons">
+                        <li><a href="Search.html" aria-label="Tìm kiếm"><i class="fas fa-search"></i></a></li>
+                        <li><a href="DangNhap.html" aria-label="Tài khoản"><i class="fas fa-user"></i></a></li>
+                        <li><a href="GioHang.html" aria-label="Giỏ hàng"><i class="fas fa-shopping-cart"></i></a></li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Arzopa -->
+    <div class="arzopa-intro">
+        <div class="heading">
+            <h2><b>Về Arzopa</b></h2>
+        </div>
+        <p>
+            Arzopa là thương hiệu chuyên sản xuất các màn hình di động chất lượng cao, nổi bật với thiết kế mỏng nhẹ, hình ảnh sắc nét và khả năng kết nối linh hoạt. 
+            Từ khi thành lập, Arzopa đã không ngừng đổi mới, tập trung vào việc cung cấp giải pháp hiển thị tốt nhất cho game thủ, dân văn phòng và người dùng di động.
+        </p>
+        <p>
+            Màn hình Arzopa hỗ trợ Full HD, 2K, 4K và có khả năng kết nối đa thiết bị như laptop, PC, điện thoại, máy chơi game (Nintendo Switch, PS5, Xbox). 
+            Sản phẩm của hãng kết hợp giữa tính di động và hiệu suất hiển thị, giúp người dùng có trải nghiệm hình ảnh mượt mà mọi lúc mọi nơi.
+        </p>
+    </div>
+
+    <button class="circle-button to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      
+      <!-- Nút Chat -->
+      <button class="circle-button chat-box" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+      </button>
+      
+      <!-- Khung Chat -->
+      <div class="chat-window" id="chatWindow">
+          <div class="chat-header">
+              <i class="fas fa-comments mr-2"></i> Chat Box
+              <button class="close-chat" onclick="toggleChat()">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <div class="chat-body" id="chatBody">
+              <div class="message received">
+                  <p>Chào bạn! Có gì cần hỗ trợ không?</p>
+              </div>
+          </div>
+          <div class="chat-input">
+              <input type="text" id="chatMessage" placeholder="Nhập tin nhắn...">
+              <button onclick="sendMessage()">
+                  <i class="fas fa-paper-plane"></i>
+              </button>
+          </div>
+      </div>
+    <hr>
+    <!-- Footer -->
+    <footer id="wrapper-footer">
+        <div class="footer-top">
+            <ul class="Main-inf">
+                <h4>ABOUT ELYSIA STORE</h4>
+                <li><a href="#">Giới Thiệu</a></li>
+            </ul>
+            <ul class="Main-inf">
+                <h4 id="policy">CHÍNH SÁCH</h4>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
+            <ul class="Main-inf">
+                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <li><a href="#">cskh@elysiastore.com</a></li>
+                <li><a href="#">0947273489</a></li>
+            </ul>
+            <ul class="Main-inf">
+                <h4>Theo chúng tôi</h4>
+                <div class="linked-icon">
+                    <li><a class="fb" href="https://www.facebook.com/thanhson.v4"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="pin" href="https://www.pinterest.com/arzopa/?ref=woqlhbpl&sub_id="><i class="fab fa-pinterest-p"></i></a></li>
+                    <li><a class="yt" href="https://www.youtube.com/channel/UCxZpiAUuVlcNEEFEFAvNvFw/featured?ybp=ggIId29xbGhicGw%253D"><i class="fab fa-youtube-square"></i></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="copy">
+            <a href="#">Copyright © 2025 ELYSIA STORE all rights reserved.</a>
+        </div>
+        <script src="Javascripts/main.js"></script>
+    </footer>
+</body>
+</html>
